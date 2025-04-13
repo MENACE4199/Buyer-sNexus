@@ -1,13 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Essential Meta Tags for SEO and Responsiveness -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Buyers Nexus – Smart shopping guides, honest reviews, and curated affiliate picks to help you buy better.">
+  <meta name="description" content="Buyers Nexus – Your trusted hub for honest product reviews, top picks, and comprehensive buying guides.">
+  <meta name="keywords" content="affiliate marketing, product reviews, buying guides, comparisons, smart shopping">
   <title>Buyers Nexus | Smart Reviews & Buying Guides</title>
+  <!-- Inline CSS for Basic Styling and Layout -->
+  <style>
+    /* Reset & Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+
+    /* Header / Navigation */
+    header { background: #fff; padding: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    header h1 { text-align: center; font-size: 2.5em; margin-bottom: 10px; }
+    nav ul { display: flex; justify-content: center; flex-wrap: wrap; }
+    nav li { margin: 0 10px; }
+    nav li a { padding: 8px 12px; font-weight: bold; color: #333; }
+    
+    /* Hero Section */
+    .hero { background: url('hero-background.jpg') center/cover no-repeat; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
+    .hero h1 { font-size: 3em; margin-bottom: 0.5em; }
+    .hero p { font-size: 1.2em; }
+    
+    /* Section Styles */
+    section { padding: 60px 0; }
+    section h2 { text-align: center; margin-bottom: 20px; font-size: 2.5em; }
+    
+    /* Featured Categories */
+    .categories { display: flex; justify-content: space-around; flex-wrap: wrap; }
+    .category { background: #fff; width: 22%; margin: 1%; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 8px; }
+    .category img { width: 80px; height: 80px; object-fit: cover; margin-bottom: 10px; }
+    .category h3 { font-size: 1.5em; margin-bottom: 10px; }
+
+    /* Trending Reviews & Latest Guides Posts */
+    .posts { display: flex; flex-wrap: wrap; justify-content: space-around; }
+    .post { background: #fff; width: 30%; margin: 1%; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 8px; }
+    .post h4 { margin-bottom: 10px; }
+    .post p { font-size: 0.9em; margin-bottom: 10px; }
+    
+    /* Newsletter Signup */
+    .newsletter { background: #333; color: #fff; padding: 40px 20px; text-align: center; }
+    .newsletter input[type="email"] { width: 60%; padding: 10px; border: none; border-radius: 4px; margin-right: 10px; }
+    .newsletter input[type="submit"] { padding: 10px 20px; border: none; border-radius: 4px; background: #e67e22; color: #fff; font-weight: bold; cursor: pointer; }
+    
+    /* Footer */
+    footer { background: #222; color: #ddd; padding: 20px 0; }
+    footer .footer-container { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; }
+    footer .footer-links a { color: #ddd; font-size: 0.9em; margin: 0 5px; }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      nav ul { flex-direction: column; }
+      .category { width: 45%; }
+      .post { width: 45%; }
+    }
+    @media (max-width: 480px) {
+      .category, .post { width: 100%; margin: 5px 0; }
+      .newsletter input[type="email"] { width: 80%; margin-bottom: 10px; display: block; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Buyers Nexus</h1>
-  <p>Your trusted hub for honest product reviews, top picks, and affiliate shopping guides.</p>
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <div class="container">
+      <h1>Buyers Nexus</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/tech-gadgets/">Tech &amp; Gadgets</a></li>
+          <li><a href="/home-living/">Home &amp; Living</a></li>
+          <li><a href="/health-fitness/">Health &amp; Fitness</a></li>
+          <li><a href="/work-productivity/">Work &amp; Productivity</a></li>
+          <li><a href="/guides/">Guides &amp; Comparisons</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1>Find the Best Products — Reviewed, Ranked, and Explained</h1>
+      <p>Your trusted hub for honest reviews, expert buying guides, and smart shopping tips.</p>
+    </div>
+  </section>
+  
+  <!-- FEATURED CATEGORIES SECTION -->
+  <section>
+    <div class="container">
+      <h2>Featured Categories</h2>
+      <div class="categories">
+        <div class="category">
+          <img src="https://via.placeholder.com/80" alt="Tech &amp; Gadgets Icon">
+          <h3>Tech &amp; Gadgets</h3>
+          <p>Latest reviews and comparisons of electronics.</p>
+        </div>
+        <div class="category">
+          <img src="https://via.placeholder.com/80" alt="Home &amp; Living Icon">
+          <h3>Home &amp; Living</h3>
+          <p>Appliances, decor, and smart home solutions.</p>
+        </div>
+        <div class="category">
+          <img src="https://via.placeholder.com/80" alt="Health &amp; Fitness Icon">
+          <h3>Health &amp; Fitness</h3>
+          <p>Gear, supplements, and wellness products.</p>
+        </div>
+        <div class="category">
+          <img src="https://via.placeholder.com/80" alt="Work &amp; Productivity Icon">
+          <h3>Work &amp; Productivity</h3>
+          <p>Tools and reviews for the modern professional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- TRENDING REVIEWS SECTION -->
+  <section>
+    <div class="container">
+      <h2>Trending Reviews</h2>
+      <div class="posts">
+        <div class="post">
+          <h4>MacBook Air M3 Review</h4>
+          <p>An in-depth look at the new MacBook Air with real-world testing and comparisons.</p>
+          <a href="/tech-gadgets/laptops/macbook-air-m3-review/">Read More</a>
+        </div>
+        <div class="post">
+          <h4>Top 10 Smart Home Devices</h4>
+          <p>Discover the best smart devices that make your home intelligent and secure.</p>
+          <a href="/home-living/smart-home/top-10-smart-home-devices/">Read More</a>
+        </div>
+        <div class="post">
+          <h4>Best Home Treadmills 2025</h4>
+          <p>Our comprehensive guide to finding the best treadmill for your home workouts.</p>
+          <a href="/health-fitness/home-workout-gear/best-home-treadmills-2025/">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- LATEST GUIDES SECTION -->
+  <section>
+    <div class="container">
+      <h2>Latest Guides</h2>
+      <div class="posts">
+        <div class="post">
+          <h4>Ultimate Guide to Buying Laptops</h4>
+          <p>Everything you need to know before purchasing your next laptop.</p>
+          <a href="/guides/best-laptops-2025/">Read More</a>
+        </div>
+        <div class="post">
+          <h4>Budget vs. Premium: Which is Right for You?</h4>
+          <p>An analysis of budget options versus premium products across various categories.</p>
+          <a href="/guides/budget-vs-premium-products/">Read More</a>
+        </div>
+        <div class="post">
+          <h4>Product Comparison Tables: Why They Matter</h4>
+          <p>Learn how side-by-side comparisons help simplify your buying decisions.</p>
+          <a href="/guides/product-comparison-tables/">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- NEWSLETTER SIGNUP SECTION -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Subscribe for Exclusive Deals & Reviews</h2>
+      <p>Get the latest updates and expert recommendations straight to your inbox.</p>
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+  
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-links">
+        <a href="/">Home</a> |
+        <a href="/about/">About</a> |
+        <a href="/contact/">Contact</a> |
+        <a href="/privacy-policy/">Privacy Policy</a> |
+        <a href="/affiliate-disclosure/">Affiliate Disclosure</a> |
+        <a href="/sitemap/">Sitemap</a>
+      </div>
+      <div>
+        <p>&copy; 2025 Buyers Nexus. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
+
